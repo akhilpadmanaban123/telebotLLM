@@ -16,8 +16,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Replace with your API keys
-TELEGRAM_TOKEN = "7551480728:AAHXUv-sSrkjluC-Ehubaj1OjUevLRYUbzk"
-GEMINI_API_KEY = "AIzaSyBulnqflbB3SRzg4bR-wnG648jVACQGJ2g"
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 # JSON file to store birthdays
 BIRTHDAYS_FILE = "Birthdays.json"
 
